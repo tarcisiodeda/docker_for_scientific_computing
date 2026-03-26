@@ -34,7 +34,7 @@ which outputs
 ![](docker_history.png)
 
 
-There are a few commands in this Dockerfile but focus on `CMD ["/bin/bash"]`. It means that a container launched from this image will execute `bash`. After a container executes whatever is in the `CMD` command, it will automatically shut down and that is way it seemed nothing happend when you launched one earlier.
+There are a few commands in this Dockerfile but focus on `CMD ["/bin/bash"]`. It means that a container launched from this image will execute `bash`. After a container executes whatever is in the `CMD` command, it will automatically shut down and that is why it seemed nothing happend when you launched one earlier.
 
 
 > [!NOTE]
@@ -44,7 +44,7 @@ In order to maintain the container that executes `bash` running, you need run it
 
 ```docker run -i ubuntu:20.04```
 
-Now the container execution didn't stop and youc can to run commands in it, such as `ls`.
+Now the container execution didn't stop and you can run commands in it, such as `ls`.
 
 > [!TIP]
 > You can disconnect from a container by pressing *CTRL* + *D* or by executing  `exit`.
